@@ -1,0 +1,20 @@
+.belleza-regular {
+  font-family: "Belleza", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat-body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 186;
+  font-style: normal;
+}
+
+
+h1 {
+    color: #B6AD90;
+    font-family: "Belleza";
+    background: #333D29;
+    margin: 0;
+}
