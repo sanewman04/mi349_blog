@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>MI349 Blog</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Belleza&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Montserrat:wght@180&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header>
-        <h1>Sarah's uper Interesting Blog</h1>
+        <h1>Sarah's Super Interesting Blog</h1>
     </header>
 
     <nav class="menu">
@@ -22,15 +23,17 @@
         </ul>
     </nav>
 
-    <article>
+    <article class = "first-article">
         <h2>Welcome to My Blog</h2>
-        <h3>Day: <time datetime="2025-09-24">September 24</time> <address>Written by <a href="about.html">Sarah Newman</a>.</h3>
+        <h3><address>Written by <a href="about.html">Sarah Newman</a></h3>
+        <img src="IMG_7375.png" alt="Frankie" />
+        <h4><time datetime="2025-09-24">September 24</time></h4>
         <p>
-            Welcome reader to my super interesting blog. I am not sure what I should talk about but it needs to be 200 words worth. I am going to ramble about my day. I had an exam today in my MI401 class which went well. I am currently watching Squid Games 3 while I am writing this and honestly it was boring up until the last two episodes. I watched the second episode of Dancing with the Stars yesterday and most of the fast paced dances were not face enough in my opinion. I mean I get that the stars are still learning but still. Especially Scotts cha cha was not fast enough but whatever, I'm not a dance pro. I think it might be between Robert, Whitney, and Alex in the final. Those three have been strong right out the gate so I think they will make it to the final. I also need to make a table for this blog so I will make a table with information about those three stars for it. I will also be adding a picture of a horse covered in dirt that I took the other day. His name is <a href="Frankie.pdf">Frankie</a>. Anyways this concludes my first blog post, I hope you enjoyed it but you probably didn't.
+            Welcome reader to my super interesting blog. I am not sure what I should talk about but it needs to be 200 words worth. I am going to ramble about my day. I had an exam today in my MI401 class which went well. I am currently watching Squid Games 3 while I am writing this and honestly it was boring up until the last two episodes. I watched the second episode of Dancing with the Stars yesterday and most of the fast paced dances were not face enough in my opinion. I mean I get that the stars are still learning but still. Especially Scotts cha cha was not fast enough but whatever, I'm not a dance pro. I think it might be between Robert, Whitney, and Alex in the final. Those three have been strong right out the gate so I think they will make it to the final. I also need to make a table for this blog so I will make a table with information about those three stars for it. I will also be adding a picture of a horse covered in dirt that I took the other day. His name is Frankie. Anyways this concludes my first blog post, I hope you enjoyed it but you probably didn't.
         </p>
         <table>
             <caption>Top 3 Dancing with the Stars Season 34 IMO</caption>
-            <tr>
+            <tr class="table-headers">
                 <th>Name</th>
                 <th>Professional Partner</th>
                 <th>Known for...</th>
@@ -53,16 +56,17 @@
         </table>
     </article>
 
-    <article>
+    <article class="second-article">
         <h2>Another Blog Yay</h2>
-        <h3>Day: <time datetime="2025-09-25">September 25</time> <address>Written by <a href="about.html">Sarah Newman</a>.</h3>
+        <h3><address>Written by <a href="about.html">Sarah Newman</a></h3>
+        <h4><time datetime="2025-09-25">September 25</time></h4>
         <p>
             Here is another blog entry where I need to ramble to get the word count. Today I went to my MI420 class. I finished my 3D print model for our third project. The assignment is where I have to print something to put on a little wind up walking toy. I made a couple different ideas but many people liked the sketch of the piranha plant from mario so I went with that. Making it in tinkercad took hours but it was worth it. Hopefully it will print well because it might need a lot of structure. I am printing it in resin so hopefully that helps and doesn't cost me a fortune. It needs to stop raining. I liked a little rain here or there but now there is too much moisture everywhere. I can't ride outside when it is pouring rain and the outdoor ring takes forever to dry from flooding. The horses are muddy and wet and their feet are going to get too moist if this rain keeps up. The horses don't care, they're horses, but I care. I am very close to the word count now. I am more likely to get run over by a scooter on campus than a car.
 
         </p>
     </article>
 
-    <section>
+    <section class="newsletter">
         <h4>Sign up for my newsletter</h4>
         <form name="newsletter" class="form" netlify>
         <div class="form">
@@ -74,7 +78,7 @@
             <input type="email" name="email" id="email" required>
         </div>
         <div class="form">
-            <input type="submit" value="Subscribe!">
+            <input type="submit" value="Subscribe!" class ="submit-button">
         </div>
         </form>
     </section>

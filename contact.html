@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MI349 Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Montserrat:wght@180&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -18,18 +22,18 @@
         </ul>
     </nav>
 
-    <section>
+    <section class="contact">
         <h2>Contact me!</h2>
         <form name="contact" class="contact-form" netlify>
-            <div class="fcontact-form">
+            <div class="form-row">
                 <label for="name">Enter your name: </label>
                 <input type="text" name="name" id="name" required>
             </div>
-            <div class="contact-form">
+            <div class="form-row">
                 <label for="email">Enter your email: </label>
                 <input type="email" name="email" id="email" required>
             </div>
-            <div>
+            <div class="form-row">
                 <label for="contact-select">Reason for contact:</label>
                 <select id="contact-select" name="reason">
                     <option value="">--Please choose an option--</option>
@@ -38,13 +42,13 @@
                     <option value="interview">interested in an interview</option>
                 </select>
             </div>
-            <div>
+            <div class="form-row">
                 <label for="text-contact">Any Comments:</label>
                 <textarea id="text-contact" name="text" rows="5" cols="33">
                 </textarea>
             </div>
-            <div class="contact-form">
-                <input type="submit" value="Submit!">
+            <div class="form-row">
+                <input type="submit" value="Submit!" class="submit-button">
             </div>
         </form>
     </section>
