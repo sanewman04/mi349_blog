@@ -1,5 +1,5 @@
-.aboreto-regular {
-  font-family: "Aboreto", system-ui;
+.libre-caslon-display-regular {
+  font-family: "Libre Caslon Display", serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -18,7 +18,7 @@ body {
 }
 h1 {
     color: #F2F4F3;
-    font-family: "Aboreto";
+    font-family: "Libre Caslon Display";
     background: #333D29;
     margin: 0;
     font-size: 30px;
@@ -26,6 +26,7 @@ h1 {
     padding: 20px;
     text-align: center;
     box-sizing: border-box;
+    letter-spacing: 2px;
 }
 
 .menu {
@@ -143,6 +144,7 @@ p {
     display: flex;
     flex-direction: row;
     align-self: flex-start;
+    justify-content: space-between;
     flex-wrap: nowrap;
     max-width: 100%;
     overflow-x: hidden;
@@ -155,7 +157,6 @@ p {
 }
 
 #photo img {
-    display: block;
     width: 100%;
     height: auto;
     object-fit: contain;
@@ -255,7 +256,7 @@ input[type="submit"] {
     font-family: "Montserrat";
     font-size: 16px;
     color: #212220;
-    margin: 20px 0 0 30px;
+    margin: 30px 0 0 30px;
 }
 
 .fact-list li {
@@ -283,6 +284,7 @@ input[type="submit"] {
     flex-wrap: wrap;
     max-width: 100%;
     overflow-x: hidden;
+    justify-content: center;
 
 }
 
@@ -290,6 +292,7 @@ input[type="submit"] {
     flex: 0 0 auto;
     max-width: 300px;
     text-align: center;
+    align-items: center;
     width: 100%;
     height: auto;
     object-fit: contain;
@@ -339,15 +342,16 @@ input[type="submit"] {
 @media screen and (max-width: 1024px) {
     .first-article-flex {
         flex-direction: column;
-        flex-wrap: wrap;
         align-items: center;
         text-align: center;
+        justify-content: center;
     }
     #photo {
         max-width: 90%;
+        marin: 0 auto;
     }
     #photo img {
-        width: 100%;
+        width: 90%;
     }
     .menu ul{
         font-size: 18px;
@@ -380,15 +384,22 @@ input[type="submit"] {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        justify-content: center;
     }
 
     .about-me img {
         max-width: 90%;
         margin: 0 auto;
+        align-items: center;
     }
 
     .about-me-right-text {
         width: 100%;
+        margin: 10px 30px;
+    }
+    .fact-list li::marker {
+        content: "– ";
+        font-weight: 600;  
     }
 
 }
@@ -397,15 +408,16 @@ input[type="submit"] {
 @media screen and (max-width: 600px) {
     .first-article-flex {
         flex-direction: column;
-        flex-wrap: wrap;
         align-items: center;
         text-align: center;
+        justify-content: center;
     }
     #photo {
         max-width: 90%;
+        margin: 0 auto;
     }
     #photo img {
-        width: 100%;
+        width: 90%;
     }
     .menu ul{
         font-size: 19px;
@@ -448,5 +460,8 @@ input[type="submit"] {
     .about-me-right-text {
         width: 100%;
     }
-
+    .fact-list li::marker {
+        content: "– ";
+        font-weight: 600;  
+    }
 }
