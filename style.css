@@ -143,6 +143,9 @@ p {
     display: flex;
     flex-direction: row;
     align-self: flex-start;
+    flex-wrap: nowrap;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 #photo {
@@ -152,9 +155,12 @@ p {
 }
 
 #photo img {
+    display: block;
     width: 100%;
     height: auto;
     object-fit: contain;
+    max-width: 100%;
+    border-radius: 5px;
 
 }
 
@@ -272,7 +278,12 @@ input[type="submit"] {
 
 .about-me {
     display: flex;
+    flex-direction: row;
     align-self: flex-start;
+    flex-wrap: wrap;
+    max-width: 100%;
+    overflow-x: hidden;
+
 }
 
 .about-me img {
@@ -282,12 +293,16 @@ input[type="submit"] {
     width: 100%;
     height: auto;
     object-fit: contain;
+    display: block;
+    border-radius: 5px;
+
 }
 
 .about-me-right-text {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    flex: 1px;
 
 }
 
@@ -321,9 +336,18 @@ input[type="submit"] {
   font-size: 24px;
 }
 
-@media screen and (max-width: 320px) 
+@media screen and (max-width: 1024px) {
     .first-article-flex {
         flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+    }
+    #photo {
+        max-width: 90%;
+    }
+    #photo img {
+        width: 100%;
     }
     .menu ul{
         font-size: 18px;
@@ -351,3 +375,78 @@ input[type="submit"] {
     .form {
     font-size: 18px;
     }
+
+    .about-me {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-me img {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .about-me-right-text {
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .first-article-flex {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+    }
+    #photo {
+        max-width: 90%;
+    }
+    #photo img {
+        width: 100%;
+    }
+    .menu ul{
+        font-size: 19px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    h2 {
+        font-size: 27px;
+    }
+    h3 {
+        font-size: 19px;
+    }
+    h4 {
+        font-size: 21px;
+    }
+    p {
+        font-size: 19px;
+    }
+    #photo figcaption {
+        font-size: 19px;
+    }
+    table, th, td {
+        font-size: 19px;
+    }
+    .form {
+    font-size: 19px;
+    }
+
+    .about-me {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-me img {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .about-me-right-text {
+        width: 100%;
+    }
+
+}
