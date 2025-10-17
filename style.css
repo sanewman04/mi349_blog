@@ -139,13 +139,23 @@ p {
     text-align: justify;
 }
 
-#photo {
-  float: right;
-      margin: 10px 30 10px 10px;
+.first-article-flex {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
 }
+
+#photo {
+    flex: 0 0 auto;
+    max-width: 300px;
+    text-align: center;
+}
+
 #photo img {
-    width: 200px;
+    width: 100%;
     height: auto;
+    object-fit: contain;
+
 }
 
 #photo figcaption {
@@ -153,6 +163,7 @@ p {
     font-size: 16px;
     color: 212220;
     text-align: center;
+    margin-top: 8px;
 }
 
 table {
@@ -257,12 +268,30 @@ input[type="submit"] {
   content: "– ";
   font-weight: 600;  
 }
-.about img {
-  float: left;
-  width: 300px;
-  height: auto;
-  margin: 10px 10px 10px 30px;
+
+
+.about-me {
+    display: flex;
+    align-self: flex-start;
 }
+
+.about-me img {
+    flex: 0 0 auto;
+    max-width: 300px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.about-me-right-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+
 
 .contact h2 {
     font-family: "Montserrat";
@@ -292,3 +321,33 @@ input[type="submit"] {
   font-size: 24px;
 }
 
+@media screen and (max-width: 320px) 
+    .first-article-flex {
+        flex-direction: column;
+    }
+    .menu ul{
+        font-size: 18px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    h2 {
+        font-size: 26px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 18px;
+    }
+    #photo figcaption {
+        font-size: 18px;
+    }
+    table, th, td {
+        font-size: 18px;
+    }
+    .form {
+    font-size: 18px;
+    }
